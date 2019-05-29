@@ -11,7 +11,7 @@ resource "tfe_workspace" "azure-vm-from-module" {
   terraform_version = "${var.terraform_version}"
 
   vcs_repo {
-    identifier     = "onryo/onryo/tfe-demo-azure-vm-from-module"
+    identifier     = "onryo/tfe-demo-azure-vm-from-module"
     branch         = "${var.branch}"
     oauth_token_id = "${var.oauth_token_id}"
   }
