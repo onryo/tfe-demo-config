@@ -20,7 +20,6 @@ variable "organization" {
 
 variable "oauth_token_id" {
   description = "Terraform Enterprise OAuth Token ID for VCS"
-  default     = "ot-tWKiiZ4BJpMhwmbQ"
 }
 
 
