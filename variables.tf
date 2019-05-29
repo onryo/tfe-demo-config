@@ -10,10 +10,6 @@ variable "hostname" {
   default     = "app.terraform.io"
 }
 
-variable "token" {
-  description = "Terraform Enterprise token"
-}
-
 variable "organization" {
   description = "Terraform Enterprise organization"
 }
