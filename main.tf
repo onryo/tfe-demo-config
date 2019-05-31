@@ -10,6 +10,7 @@ module "aws-ec2-instance-dev" {
 
   branch                = "dev"
   terraform_version     = "${var.terraform_version}"
+  hostname              = "${var.hostname}"
   token                 = "${var.token}"
   organization          = "${var.organization}"
   oauth_token_id        = "${var.oauth_token_id}"
@@ -25,6 +26,7 @@ module "aws-ec2-instance-prod" {
 
   branch                = "prod"
   terraform_version     = "${var.terraform_version}"
+  hostname              = "${var.hostname}"
   token                 = "${var.token}"
   organization          = "${var.organization}"
   oauth_token_id        = "${var.oauth_token_id}"
@@ -82,6 +84,7 @@ module "azure-vm-from-module" {
   source = "./modules/azure-vm-from-module"
 
   terraform_version   = "${var.terraform_version}"
+  hostname            = "${var.hostname}"
   token               = "${var.token}"
   organization        = "${var.organization}"
   oauth_token_id      = "${var.oauth_token_id}"
@@ -122,6 +125,7 @@ module "gcp-compute-instance" {
   source = "./modules/gcp-compute-instance"
 
   terraform_version   = "${var.terraform_version}"
+  hostname            = "${var.hostname}"
   token               = "${var.token}"
   organization        = "${var.organization}"
   oauth_token_id      = "${var.oauth_token_id}"
