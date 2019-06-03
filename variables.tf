@@ -40,7 +40,7 @@ variable "admin_password" {
 
 # AWS variables
 
-variable "aws_terraform_AWS version" {
+variable "aws_terraform_version" {
   description = "Terraform version to use for AWS runs"
   default     = "0.11.14"
 }

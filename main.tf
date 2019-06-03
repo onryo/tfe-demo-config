@@ -106,7 +106,7 @@ resource "tfe_policy_set" "azure" {
   organization = var.organization
   depends_on   = [module.azure-vm-from-module]
 
-  policy_ids = [tfe_sentinel_policy.restrict-vm-publisher.id]
+  policy_ids             = [tfe_sentinel_policy.restrict-vm-publisher.id]
   workspace_external_ids = [module.azure-vm-from-module.tfe_workspace_external_id]
 }
 
@@ -142,7 +142,7 @@ resource "tfe_policy_set" "gcp" {
   organization = var.organization
   depends_on   = [module.gcp-compute-instance]
 
-  policy_ids = [tfe_sentinel_policy.restrict-gcp-machine-type.id]
+  policy_ids             = [tfe_sentinel_policy.restrict-gcp-machine-type.id]
   workspace_external_ids = [module.gcp-compute-instance.tfe_workspace_external_id]
 }
 
