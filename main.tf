@@ -9,7 +9,7 @@ module "aws-ec2-instance-dev" {
   source = "./modules/aws-ec2-instance"
 
   branch                = "dev"
-  terraform_version     = var.terraform_version
+  terraform_version     = var.aws_terraform_version
   hostname              = var.hostname
   token                 = var.token
   organization          = var.organization
@@ -25,7 +25,7 @@ module "aws-ec2-instance-prod" {
   source = "./modules/aws-ec2-instance"
 
   branch                = "prod"
-  terraform_version     = var.terraform_version
+  terraform_version     = var.aws_terraform_version
   hostname              = var.hostname
   token                 = var.token
   organization          = var.organization
@@ -86,7 +86,7 @@ resource "tfe_sentinel_policy" "restrict-aws-instance-type" {
 module "azure-vm-from-module" {
   source = "./modules/azure-vm-from-module"
 
-  terraform_version   = var.terraform_version
+  terraform_version   = var.azure_terraform_version
   hostname            = var.hostname
   token               = var.token
   organization        = var.organization
@@ -127,7 +127,7 @@ resource "tfe_sentinel_policy" "restrict-vm-publisher" {
 module "gcp-compute-instance" {
   source = "./modules/gcp-compute-instance"
 
-  terraform_version = var.terraform_version
+  terraform_version = var.gcp_terraform_version
   hostname          = var.hostname
   token             = var.token
   organization      = var.organization

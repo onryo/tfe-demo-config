@@ -1,10 +1,5 @@
 # TFE variables
 
-variable "terraform_version" {
-  description = "Terraform version to use for runs"
-  default     = "0.11.14"
-}
-
 variable "hostname" {
   description = "Terraform Enterprise host"
   default     = "app.terraform.io"
@@ -45,6 +40,11 @@ variable "admin_password" {
 
 # AWS variables
 
+variable "aws_terraform_AWS version" {
+  description = "Terraform version to use for AWS runs"
+  default     = "0.11.14"
+}
+
 variable "aws_access_key_id" {
   description = "AWS Access Key ID"
 }
@@ -54,6 +54,11 @@ variable "aws_secret_access_key" {
 }
 
 # Azure variables
+
+variable "azure_terraform_version" {
+  description = "Terraform version to use for Azure runs"
+  default     = "0.11.14"
+}
 
 variable "arm_subscription_id" {
   description = "ARM Subscription ID"
@@ -72,6 +77,11 @@ variable "arm_tenant_id" {
 }
 
 # GCP variables
+
+variable "gcp_terraform_version" {
+  description = "Terraform version to use for GCP runs"
+  default     = "0.12.0"
+}
 
 variable "gcp_credentials" {
   description = "GCP credentials"
