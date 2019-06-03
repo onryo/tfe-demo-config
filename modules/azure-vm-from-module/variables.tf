@@ -51,3 +51,4 @@ variable "arm_client_secret" {
 variable "arm_tenant_id" {
   description = "ARM Tenant ID"
 }
+

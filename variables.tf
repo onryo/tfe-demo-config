@@ -22,7 +22,6 @@ variable "oauth_token_id" {
   description = "Terraform Enterprise OAuth Token ID for VCS"
 }
 
-
 # Cloud-agnostic variables
 
 variable "owner" {
@@ -44,7 +43,6 @@ variable "admin_password" {
   description = "Default admin password for cloud instances"
 }
 
-
 # AWS variables
 
 variable "aws_access_key_id" {
@@ -54,7 +52,6 @@ variable "aws_access_key_id" {
 variable "aws_secret_access_key" {
   description = "AWS Secret Access Key"
 }
-
 
 # Azure variables
 
@@ -74,7 +71,6 @@ variable "arm_tenant_id" {
   description = "ARM Tenant ID"
 }
 
-
 # GCP variables
 
 variable "gcp_credentials" {
@@ -84,3 +80,4 @@ variable "gcp_credentials" {
 variable "gcp_project" {
   description = "GCP project name"
 }
+
