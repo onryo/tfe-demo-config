@@ -27,6 +27,7 @@ resource "tfe_variable" "azure-vm-from-module_name_prefix" {
 resource "tfe_variable" "azure-vm-from-module_admin_password" {
   key          = "admin_password"
   value        = var.admin_password
+  sensitive    = true
   category     = "terraform"
   workspace_id = tfe_workspace.azure-vm-from-module.id
 }
