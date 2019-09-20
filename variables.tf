@@ -42,7 +42,7 @@ variable "admin_password" {
 
 variable "aws_terraform_version" {
   description = "Terraform version to use for AWS runs"
-  default     = "0.11.14"
+  default     = "0.12.9"
 }
 
 variable "aws_access_key_id" {
@@ -80,7 +80,7 @@ variable "arm_tenant_id" {
 
 variable "gcp_terraform_version" {
   description = "Terraform version to use for GCP runs"
-  default     = "0.12.0"
+  default     = "0.12.9"
 }
 
 variable "gcp_credentials" {
